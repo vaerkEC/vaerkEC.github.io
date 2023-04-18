@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <title>Job Posts</title> 
+    <link rel="stylesheet" href="stylejobpost.css"> 
+    <script src="script.js"></script> 
+</head> 
+<body> 
+    
+    <h1>Job Openings</h1> 
+    <form> 
+        <label for="companyName">Company Name</label>
+        <br> 
+        <input type="text" id="companyName">
+        <br>
+        <label for="jobTitle">Job Title</label>
+        <br>
+        <input type="text" id="jobTitle">
+        <br>
+        <label for="workplaceType">Workplace Type</label>
+        <br>
+
+        <select id="workplaceType">
+        <option value="Office">Office</option> 
+        <option value="Remote">Remote</option> 
+        <option value="Hybrid">Hybrid</option> 
+        </select>
+        <br>
+        <label for="employeeLocation">Employee Location</label>
+        <br>
+        <input type="text" id="employeeLocation">
+        <br>
+        
+        <label for="jobDescription">Job Description</label>
+        <br>
+        
+        <textarea rows="4" cols="50" id="jobDescription"></textarea>
+        <br>
+
+        <label for="experienceLevel">Experience Level</label>
+        <br>
+        <select id="experienceLevel">
+        <option value="Beginner">Beginner</option> 
+        <option value="Intermediate">Intermediate</option> 
+        <option value="Expert">Expert</option> 
+        </select>
+        <br>
+
+        <label for="jobType">Job Type</label><br>
+        <select id="jobType">
+        <option value="Full-time">Full-time</option> 
+        <option value="Part-time">Part-time</option> 
+        <option value="Contract">Contract</option> 
+        <option value="Internship">Internship</option> 
+        </select>
+        <br>
+
+        <label for="salary">Salary</label>
+        <br>
+        <input type="text" id="salary">
+        <br>
+    
+        <button type="button" onclick="continueForm()">Continue</button>
+    
+    </form> 
+
+    <script> function continueForm() { location.href = " jobPost2.html"; } </script> 
+
+</body> 
+</html>

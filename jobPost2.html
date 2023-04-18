@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <title>Job Posts Continued</title> 
+    <link rel="stylesheet" href="stylejobpost.css"> 
+    <script src="script.js"></script> 
+</head> 
+<body> 
+    <h1>Job Openings Continued</h1> 
+    <form> 
+        <label for="jobDescriptionContinued"> Job Description </label>
+        <br> 
+        <textarea rows="6" cols="50" id="jobDescriptionContinued"></textarea>
+        <br>
+        <label for="requiredSkills">Required Skills</label>
+        <br>
+        <input type="text" id="requiredSkills">
+        <br>
+        <label for="desiredSkills">Desired Skills (optional)</label>
+        <br>
+        <input type="text" id="desiredSkills">
+        <br>
+        <label for="extraInfo">Extra Information</label>
+        <br>
+        <textarea rows="3" cols="50" id="extraInfo"></textarea>
+        <br>
+        <button type="submit" onclick="postFullJob()">Post Full Job</button>
+        
+    </form> 
+    
+    <div id="jobPosts"></div> 
+    <script> 
+    
+    function postFullJob() { 
+         let companyName = document.getElementById("companyName").value; 
+
+         let jobTitle = document.getElementById("jobTitle").value; 
+
+         let workplaceType = document.getElementById("workplaceType").value; 
+
+         let employeeLocation = document.getElementById("employeeLocation").value; 
+
+         let jobDescription = document.getElementById("jobDescription").value + document.getElementById("jobDescriptionContinued").value; 
+         
+         let experienceLevel = document.getElementById("experienceLevel").value; 
+         
+         let jobType = document.getElementById("jobType").value; 
+         
+         let salary = document.getElementById("salary").value; 
+         
+         let requiredSkills = document.getElementById("requiredSkills").value; 
+         
+         let desiredSkills = document.getElementById("desiredSkills").value; 
+         
+         let extraInfo = document.getElementById;
+
+    }
+
+    </script> 
+</body>
+</html>

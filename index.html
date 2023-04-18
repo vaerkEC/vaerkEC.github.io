@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" id="home-page">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equip="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>VAERK - Construyamos oportunidades de empleo juntos.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- NavagationBar start-->
+<nav class="NavagationBar">
+    
+    <div class="NavagationBar-left">
+        <a href="index.html" class="VAERK_logo"><img src="images/vaerk_logo.png" alt="VAERK logo"> </a>
+    
+        <div class="caja_debusqueda">
+            <img src="images/search.png">
+            <input type="text" placeholder="Buscar">
+        </div>
+    
+    </div>
+    
+    <div class="NavagationBar-center">
+        <ul>
+            <li><a href="#" class="page_inicio"> <img src="images/new-home.png"> <span>Iniciar</span> </a></li>
+            <li><a href="#"> <img src="images/new-network.png"> <span>Mi Red</span> </a></li>
+            <li><a href="#"> <img src="images/new-jobs.png"> <span>Empleos</span> </a></li>
+            <li><a href="#"> <img src="images/new-messages.png"> <span>Mensajes</span> </a></li>
+            <li><a href="#"> <img src="images/new-notification.png"> <span>Notificaciones</span> </a></li>
+        </ul>
+    </div>
+    
+    <div class="NavagationBar-right">
+        <div class="online">
+            <img src="images/user-6-gardener.jpg" class="NavigationBar-pic1profile" onclick="toggleMenu()">
+        </div>
+        
+    </div>
+    <!--Profile-Dropdown-menu-->
+<div class="profile-menu-wrap" id="profileMenu">
+    <div class="profile-menu">
+        <div class="user-info">
+            <img src="images/user-6-gardener.jpg">
+            <div>
+                <h3>María Andrade</h3>
+                <a href="profile.html">Ve tu perfil</a>
+            </div>
+        </div>
+        <hr>    
+        <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png">
+            <p>Deja un comentario</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/setting.png">
+            <p>Configuración & Privacidad</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/help.png">
+            <p>Ayuda</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/display.png">
+            <p>Preferencias</p>
+            <span>></span>
+        </a>
+        <a href="logout.html" class="profile-menu-link">
+            <img src="images/logout.png">
+            <p>Cerrar Sesión</p>
+            <span>></span>
+        </a>
+
+    </div>
+</div>
+
+</nav>
+
+
+<!-- NavagationBar end-->
+
+<div class="container">
+<!-- -----------left sidebar--------------- -->
+    <div class="left_sidebar">
+       
+        <div class="profile-box-leftsidebar">
+            <img src="images/cover-pic-gardener.jpg" width="100%">
+            <div class="sidebar-profile-info">
+                <img src="images/user-6-gardener.jpg">
+                <h1>María Andrade</h1>
+                <h3>Jardinera</h3>
+                <ul>
+                    <li>Las vistas de tu perfil <span>23</span></li>
+                    <li>Las vistas de tus posts <span>23</span></li>
+                    <li>Las vistas de tus conexiones <span>23</span></li>
+                </ul>
+            </div>
+            <div class="sidebar-profile-link">
+                <a href="#"><img src="images/items.png"> Mis objetos</a>
+                <a href="#"><img src="images/premium.png"> Prueba premium</a>
+            </div>
+        </div>
+        
+        <div class="sidebar-activity">
+            <h3>RECIENTE</h3>
+                <a href="#"><img src="images/new-recentp.png"> Jardinería</a>
+                <a href="#"><img src="images/new-recentp.png"> Carpintería</a>
+                <a href="#"><img src="images/new-recentp.png"> Hortalizas</a>
+                <a href="#"><img src="images/new-recentp.png"> Biodiversidad</a>
+                <a href="#"><img src="images/new-recentp.png"> Clases de Paisajes</a>
+                <a href="#"><img src="images/new-recentp.png"> Armonía</a>
+
+            <h3>GRUPOS</h3>
+            <a href="#"><img src="images/new-groupp.png"> Jardinería de Tumbaco</a>
+            <a href="#"><img src="images/new-groupp.png"> Rosas Calle 7</a>
+            <a href="#"><img src="images/new-groupp.png"> Biodiversidad Pichincha</a>
+            <a href="#"><img src="images/new-groupp.png"> Unidos.ec</a>
+            <a href="#"><img src="images/new-groupp.png"> Paisajes Quitumbe</a>
+            <a href="#"><img src="images/new-groupp.png"> Paisajistas Modernos</a>
+
+            <h3>HASHTAG</h3>
+            <a href="#"><img src="images/new-hashtagp.png"> biosec</a>
+            <a href="#"><img src="images/new-hashtagp.png"> rosasverdes</a>
+            <a href="#"><img src="images/new-hashtagp.png"> aprendiendoenlinea</a>
+
+            <div class="discover-more-link">
+                <a href="#">Descubre más</a>
+
+            </div>
+
+        </div>
+    </div>
+
+
+<!-- -----------main content--------------- -->
+    <div class="main_content">
+
+        <div class="create-post">
+            <div class="create-post-input">
+                <img src="images/user-6-gardener.jpg">
+                <textarea rows="2" placeholder="Escribe aquí"></textarea>
+            </div>
+            <div class="create-post-links">
+                <li><img src="images/new-photo.png">Photo</li>
+                <li><img src="images/new-video.png">Video</li>
+                <li><img src="images/new-event.png">Event</li>
+                <li>Post</li>
+
+            </div>
+        </div>
+
+        <div class="sort-by">
+            <hr>
+            <p>Sort by: <span>top<img src="images/down-arrow.png"></span></p>
+        </div>
+
+
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-4.png">
+                <div>
+                    <h1>Rosa de Guadalupe</h1>
+                    <small>Jardinería Noventera Cotopaxi | Paisajista</small>
+                    <small>Hace 1 hora</small>
+                </div>
+            </div>
+            
+            <p>La jardinería se ha convertido en un negocio cada vez más 
+            lucrativo, con más personas interesadas en cultivar sus propias 
+            frutas y verduras, así como en mantener jardines ornamentales. 
+            Las empresas de jardinería pueden centrarse en el diseño y la 
+            instalación, o pueden proporcionar servicios continuos de cuidado 
+            del césped y el paisaje. Las empresas pueden ofrecer mantenimiento 
+            regular o servicios especializados, como la colocación de nuevas
+            plantas y flores, control de plagas, corte de césped y bordes de 
+            jardines. Con tantas oportunidades en la industria de la jardinería,
+            nunca ha habido un mejor momento para iniciar un negocio exitoso.</p>
+            <img src="images/post-image-1.png" width="100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="users-liked">Elena Mallorca y otros 43</span>
+                </div>
+                <div>
+                    <span>17 comentarios &middot; 23 veces compartido</span>
+                </div>
+            </div>
+
+            <div class="post-activity">
+                <div>
+                    <img src="images/user-6-gardener.jpg" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/like.png">
+                    <span>Me gusta</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/comment.png">
+                    <span>Comentar</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/share.png">
+                    <span>Compartir</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/send.png">
+                    <span>Enviar</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-2.png">
+                <div>
+                    <h1>Norman Homero</h1>
+                    <small>Carpintería Roble | Carpintero</small>
+                    <small>Hace 83 minutos</small>
+                </div>
+            </div>
+            
+            <p>Estamos buscando personas motivadas para unirse a 'Carpintería 
+            Roble' a tiempo completo. Ofrecemos salarios competitivos, beneficios 
+            y un ambiente de trabajo positivo. Para tener éxito en este rol, debe 
+            poder seguir instrucciones, poseer buenas habilidades 
+            para resolver problemas y estar en buena forma física. El candidato 
+            ideal debe estar orgulloso de su trabajo, tener una buena actitud y 
+            ser detallista. Si esto suena como usted, por favor póngase en contacto
+            – nos encantaría saber de usted.</p>
+            <img src="images/post-image-2.png" width="100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="users-liked">Lorena Ramona y otros 12</span>
+                </div>
+                <div>
+                    <span>3 comentarios &middot; 1 vez compartido</span>
+                </div>
+            </div>
+
+            <div class="post-activity">
+                <div>
+                    <img src="images/user-6-gardener.jpg" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/like.png">
+                    <span>Me gusta</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/comment.png">
+                    <span>Comentar</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/share.png">
+                    <span>Compartir</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/send.png">
+                    <span>Enviar</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-3.png">
+                <div>
+                    <h1>Lara de la Castilla</h1>
+                    <small>Tienda Larita | Gerente</small>
+                    <small>Hace 3 horas</small>
+                </div>
+            </div>
+            
+            <p>¡Estamos en busca de una persona organizada y motivada para unirse a
+            nuestra tienda como empleado del turno nocturno! Será responsable de 
+            abrir y cerrar la tienda, abastecer los estantes y ayudar a los clientes
+            durante su experiencia de compra. Nuestro candidato ideal tiene 
+             xcelentes habilidades de servicio al cliente, está motivado y es capaz
+            de administrar su tiempo de manera efectiva. Presente su solicitud hoy 
+            y únase a esta familia.</p>
+            <img src="images/post-image-3.png" width="100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="users-liked">Sergio Gonzales</span>
+                </div>
+                <div>
+                    <span>4 comentarios &middot; No compartido</span>
+                </div>
+            </div>
+
+            <div class="post-activity">
+                <div>
+                    <img src="images/user-6-gardener.jpg" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/like.png">
+                    <span>Me gusta</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/comment.png">
+                    <span>Comentar</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/share.png">
+                    <span>Compartir</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/send.png">
+                    <span>Enviar</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-5.png">
+                <div>
+                    <h1>Mónica Álvarez</h1>
+                    <small>Ámbar Peluquería | Estilista</small>
+                    <small>Hace 7 horas</small>
+                </div>
+            </div>
+            
+            <p>¡Ámbar Peluquería está buscando manicuristas y pedicuristas con 
+            experiencia para unirse a nuestro equipo! Tenemos puestos de tiempo 
+            completo disponibles para aquellos con 3 o más años de experiencia. 
+            Damos la bienvenida a cualquier persona apasionada por el cuidado de 
+            las uñas y que esté ansiosa por traer su talento a nuestro salón. 
+            Demuestre sus habilidades y sea parte de un equipo de apoyo y experiencia. 
+            Aplica hoy!</p>
+            <img src="images/post-image-4.png" width="100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="users-liked">Alvardo Fernando y otros 21</span>
+                </div>
+                <div>
+                    <span>9 comentarios &middot; 6 veces compartido</span>
+                </div>
+            </div>
+
+            <div class="post-activity">
+                <div>
+                    <img src="images/user-6-gardener.jpg" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/like.png">
+                    <span>Me gusta</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/comment.png">
+                    <span>Comentar</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/share.png">
+                    <span>Compartir</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="images/send.png">
+                    <span>Enviar</span>
+                </div>
+            </div>
+
+        </div>
+
+        
+    </div>
+
+<!-- -----------right sidebar--------------- -->
+    <div class="right-sidebar">
+        <div class="sidebar-news">
+            <img src="images/new-more.png" class="info-icon">
+            <h3>Noticias</h3> 
+            <a href="#">Migrantes ecuatorianos se desplazan a Cánada.</a>
+            <span>Hace 14 horas &middot; 2.120 visitas</span>
+
+            <a href="#">La cuidad de 110.000 flores: Loja.</a>
+            <span>Hace 20 horas &middot; 1.003 visitas</span>   
+
+            <a href="#">Las mejores tijeras para podar.</a>
+            <span>Hace 1 día &middot; 2.546 visitas</span>
+
+            <a href="#">Embajada de Brasil anuncia trabajos en Ecuador.</a>
+            <span>Hace 3 dias &middot; 6.741 visitas</span>
+
+            <a href="#">Cánada ofrece empleos para niñeras y cuidadores.</a>
+            <span>Hace 4 días &middot; 5.356 visitas</span>
+
+            <div class="lee-mas">
+            <a href="#">Lee más</a>
+            </div>
+
+        </div>
+
+        <div class="ad-box">
+            <p>Anuncio  &middot; &middot; &middot;</p>
+            <div>
+                <img src="images/first-ad.jpg">
+                <img src="images/second-ad.jpg">
+            </div>
+            <b>Imágenes random gratis para utilizar</b>
+            <a href="#" class="ad-link">Aprende más</a>
+        </div>
+
+        <div class="side-links">
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Accesibilidad</a>
+            <a href="#">Centro de Ayuda</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Anuncios</a>
+            <a href="#">Más</a>
+
+            <div class="copyright-message">
+                <img src="images/vaerk_logo.png">
+                <p>&#169; Vaerk 2023. </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+    let profileMenu = document.getElementById("profileMenu");
+
+    function toggleMenu(){
+
+        profileMenu.classList.toggle("open-menuclick");
+
+    }
+</script>
+
+</body>
+</html>

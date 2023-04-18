@@ -1,0 +1,33 @@
+.jobPost {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    }
+    
+    h1 {
+    text-align: center;
+    }
+    
+    form {
+    width: 500px;
+    margin: 0 auto;
+    }
+    
+    input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    }
+    
+    button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    }
+    
+    #jobPosts {
+    width: 70%;
+    margin: 0 auto;
+    }

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" id="home-page">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equip="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>VAERK - Construyamos oportunidades de empleo juntos.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NavagationBar start-->
+  <nav class="NavagationBar">
+      
+    <div class="NavagationBar-left">
+        <a href="index.html" class="VAERK_logo"><img src="images/vaerk_logo.png" alt="VAERK logo"> </a>
+    
+        <div class="caja_debusqueda">
+            <img src="images/search.png">
+            <input type="text" placeholder="Buscar">
+        </div>
+    
+    </div>
+    
+    <div class="NavagationBar-center">
+        <ul>
+            <li><a href="#" class="page_inicio"> <img src="images/new-home.png"> <span>Iniciar</span> </a></li>
+            <li><a href="#"> <img src="images/new-network.png"> <span>Mi Red</span> </a></li>
+            <li><a href="#"> <img src="images/new-jobs.png"> <span>Empleos</span> </a></li>
+            <li><a href="#"> <img src="images/new-messages.png"> <span>Mensajes</span> </a></li>
+            <li><a href="#"> <img src="images/new-notification.png"> <span>Notificaciones</span> </a></li>
+        </ul>
+    </div>
+    
+    <div class="NavagationBar-right">
+        <div class="online">
+            <img src="images/user-6-gardener.jpg" class="NavigationBar-pic1profile" onclick="toggleMenu()">
+        </div>
+        
+    </div>
+    <!--Profile-Dropdown-menu-->
+  <div class="profile-menu-wrap" id="profileMenu">
+    <div class="profile-menu">
+        <div class="user-info">
+            <img src="images/user-6-gardener.jpg">
+            <div>
+                <h3>María Andrade</h3>
+                <a href="profile.html">Ve tu perfil</a>
+            </div>
+        </div>
+        <hr>    
+        <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png">
+            <p>Deja un comentario</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/setting.png">
+            <p>Configuración & Privacidad</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/help.png">
+            <p>Ayuda</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/display.png">
+            <p>Preferencias</p>
+            <span>></span>
+        </a>
+        <a href="logout.html" class="profile-menu-link">
+            <img src="images/logout.png">
+            <p>Cerrar Sesión</p>
+            <span>></span>
+        </a>
+
+    </div>
+  </div>
+
+  </nav>
+
+  <div class="job-searchd">
+    <div class="the_option_bar">
+      <!--<header>
+        <h1>Job Search</h1>
+      </header>-->
+
+      <form id="search-form">
+        <input type="text" id="search" placeholder="Buscar empleos" class="search-for-jobs-searchbox">
+        <select id="location">
+          <option value="">Ubicación</option>
+          <option value="New York">Tumbaco</option>
+          <option value="San Francisco">El Inca</option>
+          <option value="Los Angeles">El Condado</option>
+          <option value="Los Angeles">Puembo</option>
+          <option value="Los Angeles">Nayón</option>
+          <option value="Los Angeles">El Quinche</option>
+          <option value="Los Angeles">Tababela</option>
+          <option value="Los Angeles">El Condado</option>
+          <option value="Los Angeles">Quitumbe</option>
+          <option value="Los Angeles">San Juan</option>
+        </select>
+        <input type="submit" value="Buscar" class="searchbutton-forjobsearch">
+      </form>
+    
+      <div id="jobs"></div>
+    </div>
+  </div>
+
+<script>
+  const jobs = [
+    {id: 1, title: 'Albañil con experiencia', location: 'Tumbaco', company: 'Construcciones del Norte'},
+    {id: 2, title: 'Florista', location: 'El Inca', company: 'Verde Vida Jardinería.'},
+    {id: 3, title: 'Podista- no se necesita experiencia', location: 'Yaruquí', company: 'Jardinería del Sol'},
+    {id: 4, title: 'Asitente para Paisajista', location: 'San Juan', company: 'Verde Esperanza'},
+    {id: 5, title: 'Viverista', location: 'El Condado', company: 'Flor de Loto Jardinería'},
+    {id: 6, title: 'Ferralista', location: 'Nayón', company: 'Construcciones Ecológicas'},
+    {id: 7, title: 'Jardínero', location: 'San Juan', company: 'Se necesita Jardínero - 2 días a la semana'},
+    {id: 8, title: 'Jardínero, no se necesita experiencia', location: 'El Quinche', company: 'Huertos Urbanos'},
+    {id: 9, title: 'Soldadero - no se necesita experiencia', location: 'Tababela', company: 'Edificaciones de la Montaña'},
+    {id: 10, title: 'Paisajista con experiencia', location: 'Puembo', company: 'Jardinería del Este'},
+    {id: 11, title: 'Conserjes', location: 'El Inca', company: 'Casa en el inca - empleada doméstica por tres días/semana.'},
+    {id: 12, title: 'Pintor - preferible con experiencia', location: 'Yaruquí', company: 'Edificaciones de la Montaña'},
+    {id: 13, title: 'Full Stack Developer', location: 'Quitumbe', company: 'Tierra y Raíces'},
+    {id: 14, title: 'Empleada Doméstica con experiencia', location: 'Nayón', company: 'Casa Nayón - se necesita ama de casa - tiempo completo'},
+    {id: 15, title: 'Tres Albañiles', location: 'Quitumbe', company: 'Construcciones de Vanguardia'},
+    {id: 16, title: 'Escayolista', location: 'Tababela', company: 'Edificaciones del Sur'},
+    {id: 17, title: 'Jardínero con mucha experiencia', location: 'Puembo', company: 'Jardínero con equipo propio - Jardín en Puembo'},
+  ];
+
+  const jobContainer = document.getElementById('jobs');
+  const searchForm = document.getElementById('search-form');
+  const searchInput = document.getElementById('search');
+  const locationSelect = document.getElementById('location');
+
+  function displayJobs() {
+    jobContainer.innerHTML = '';
+
+    jobs.forEach(job => {
+      console.log('job.location:', job.location);
+      const jobDiv = document.createElement('div');
+      jobDiv.className = 'job';
+      jobDiv.innerHTML = `
+        <p class="job-title">${job.title}</p>
+        <p class="job-info">${job.company}</p>
+        <p class="job-info">${job.location}</p>
+      `;
+      jobContainer.appendChild(jobDiv);
+    });
+  }
+
+  function searchJobs(e) {
+  e.preventDefault();
+
+  const searchText = searchInput.value.toLowerCase();
+  const locationFilter = locationSelect.value;
+  let filteredJobs = jobs;
+
+  console.log('locationFilter:', locationFilter);
+
+  if (searchText) {
+    filteredJobs = filteredJobs.filter(job =>
+      job.title.toLowerCase().includes(searchText)
+    );
+    console.log('filtered by search:', filteredJobs);
+  }
+
+  if (locationFilter) {
+    filteredJobs = filteredJobs.filter(job => job.location === locationFilter);
+    console.log('filtered by location:', filteredJobs);
+  }
+
+    jobContainer.innerHTML = '';
+
+    if (filteredJobs.length === 0) {
+      const noResults = document.createElement('p');
+      noResults.innerHTML = 'No hay trabajos encontrados.';
+      jobContainer.appendChild(noResults);
+    } else {
+      filteredJobs.forEach(job => {
+        const jobDiv = document.createElement('div');
+        jobDiv.className = 'job';
+        jobDiv.innerHTML = `
+          <p class="job-title">${job.title}</p>
+          <p class="job-info">${job.company}</p>
+          <p class="job-info">${job.location}</p>
+        `;
+        jobContainer.appendChild(jobDiv);
+      });
+    }
+  }
+
+  searchForm.addEventListener('submit', searchJobs);
+
+  displayJobs();
+</script>
+</body>
+
+
+</html>
